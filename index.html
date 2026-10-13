@@ -1179,9 +1179,6 @@
             <h1 class="game-title">STAR SHOOTER</h1>
             <div class="title-line"></div>
           </div>
-          <div class="ship-badge">
-            <span class="ship-dot"></span> CRAFT: <strong>NSS TRISTESSEE</strong>
-          </div>
           <p class="subtitle">Evasive Flight Arcade · Clear the Cosmos</p>
 
           <div class="menu-stats-row">
@@ -1195,7 +1192,7 @@
             <button class="diff-btn" data-diff="hardcore">Hardcore</button>
           </div>
 
-          <button class="btn-main" id="startBtn">LAUNCH MISSION</button>
+          <button class="btn-main" id="startBtn">START GAME</button>
           <button class="btn-sec" id="guideBtn">TACTICAL INTEL &amp; CONTROLS</button>
 
           <div class="panel-controls">
@@ -1257,10 +1254,7 @@
         <!-- GAME OVER PANEL -->
         <div class="panel" id="gameOverPanel" style="display: none;">
           <h1 class="game-title" style="background: linear-gradient(180deg, #ffffff 0%, #fca5a5 50%, #ef4444 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">MISSION OVER</h1>
-          <div class="ship-badge">
-            <span class="ship-dot"></span> CRAFT: <strong>NSS TRISTESSEE</strong>
-          </div>
-          <p class="subtitle" id="gameOverSub">NSS Tristessee fell in sector 4</p>
+          <p class="subtitle" id="gameOverSub">Fell in sector 4</p>
 
           <div class="stats-grid">
             <div class="stat-card highlight">
@@ -1292,9 +1286,6 @@
         <!-- GUIDE / INTEL MODAL -->
         <div class="panel" id="guidePanel" style="display: none; max-height: 85vh; overflow-y: auto;">
           <h1 class="game-title">TACTICAL INTEL</h1>
-          <div class="ship-badge">
-            <span class="ship-dot"></span> FLAGSHIP: <strong>NSS TRISTESSEE</strong>
-          </div>
           <p class="subtitle">Controls &amp; Survival Systems</p>
 
           <div class="guide-section">
@@ -2037,7 +2028,7 @@
     finalKillsVal.textContent = enemiesKilled;
     finalPowersVal.textContent = powerupsCollected;
     newHsBadge.style.display = isNewHigh ? "inline-block" : "none";
-    gameOverSub.textContent = `NSS Tristessee fell in Sector ${wave} after vaporizing ${enemiesKilled} hostiles`;
+    gameOverSub.textContent = `Fell in Sector ${wave} after vaporizing ${enemiesKilled} hostiles`;
 
     showPanel(gameOverPanel);
   }
